@@ -80,6 +80,11 @@ int main() {
     printf("Área: %.2f km²\n", area);
     printf("PIB: %.2f\n", pib);
     printf("Pontos turísticos: %d\n", pontos);
+    // calculos
+    float pibper1 = pib / populacao;
+    float densidade = populacao / area;
+    printf("pib per capita: %.2f\n", pibper1);
+    printf("densidade popu:%.2f\n", densidade);
 
     // Exibição dos dados inseridos para a carta 2
     printf("\nCarta 2: \n");
@@ -89,7 +94,12 @@ int main() {
     printf("População: %d\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f\n", pib2);
-    printf("Pontos turísticos: %d\n", pontos2);
+    printf("pontos turisticos: %d\n", pontos2);
+
+    float pibper2 = pib2 / populacao2;
+    float densidade2 = populacao2 / area2;
+    printf("pib per capita: %.2f\n", pibper2);
+    printf("densidade popu:%.2f\n", densidade2);
 
     return 0;
 }
